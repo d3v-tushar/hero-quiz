@@ -4,13 +4,6 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
 
 const Statistics = () => {
     const data = useLoaderData().data;
-    const data2 = [
-        {name: 'Page A', uv: 400, pv: 2800, amt: 2800},
-        {name: 'Page B', uv: 270, pv: 2800, amt: 2800},
-        {name: 'Page C', uv: 200, pv: 2800, amt: 2800},
-        {name: 'Page D', uv: 300, pv: 2800, amt: 2800},
-        {name: 'Page E', uv: 350, pv: 2800, amt: 2800},
-];
     return (
         <div>
             <h1 className='text-4xl my-8'>This is Statistics</h1>
