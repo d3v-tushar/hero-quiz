@@ -6,7 +6,7 @@ const Topics = () => {
     const topics = useLoaderData().data;
     console.log(topics);
     return (
-        <div className='flex gap-8 my-8'>
+        <div className='md:flex grid gap-8 my-8 justify-center'>
             {
                 topics.map(topic => <Topic key={topic.id} topic={topic}></Topic>)
             }
