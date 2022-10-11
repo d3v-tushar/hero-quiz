@@ -6,12 +6,12 @@ const Topic = ({topic}) => {
     return (
         <div className="card w-96 bg-base-400 shadow-xl">
   <figure className='bg-gray-400'><img src={logo} alt="Shoes" /></figure>
-  <div className="card-body">
+  <div className="card-body items-center text-center">
     <h2 className="card-title">Quiz Topic: {name}
     <span className="indicator-item badge badge-secondary">{total}</span>
     </h2>
     <p>Total Questions To Answer: {total}</p>
-    <div className="card-actions justify-between items-center">
+    <div className="card-actions text-justify justify-between items-center">
     <div className="rating">
         <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" />
         <input type="radio" name="rating-5" className="mask mask-star-2 bg-orange-400" checked />

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 shadow-lg rounded-lg">
   <div className="flex-1">
     <a className="btn btn-ghost normal-case text-3xl" href='/'>Hero Quiz</a>
   </div>
