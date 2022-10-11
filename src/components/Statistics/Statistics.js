@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
     const data = useLoaderData().data;
@@ -15,6 +15,7 @@ const Statistics = () => {
                 <Tooltip />
                 <CartesianGrid stroke="#ccc" strokeDasharray="5 5" />
                 <Bar dataKey="total" fill="#8884d8" barSize={30} />
+                <ResponsiveContainer/>
             </BarChart>
             </div>
         </div>

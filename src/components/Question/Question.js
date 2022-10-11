@@ -1,14 +1,34 @@
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Question = ({question, indx}) => {
     const handleAnswers = option =>{
         const correctAns = question.correctAnswer;
         if(option === correctAns){
-            alert('hoise')
+            toast.success('Correct Answer!!!', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
         }
         else{
-            alert('hoy nai')
-            }
+            toast.error('Wrong Answer !', {
+                position: "top-center",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
+        }
     }
     const {options} = question;
     return (
@@ -18,10 +38,12 @@ const Question = ({question, indx}) => {
                 <h2 className="card-title my-3">{question.question}</h2>
                 <div className="card-actions grid md:grid-cols-2 sm:grid-cols-1 gap-8">
                 {
-                     options.map((option, indx) => <div onClick={() => handleAnswers(option)} key={indx} className="card md:w-96 md:h-24 sm:w-full grid items-center px-3 glass shadow-xl image-full nav sm:flex-row sm:justify-center sm:justify-items-center">
+                     options.map((option, indx) => <div onClick={() => handleAnswers(option)} key={indx} className="card md:w-96 md:h-24 sm:w-full grid items-center px-3 glass shadow-xl image-full nav sm:flex-row sm:justify-center sm:justify-items-center btn">
                             <p>({indx +1})  {option}</p>
-                   </div>)
+                   </div>
+                   )
                 }
+                <ToastContainer/>
                 </div>
             </div>
         </div>
