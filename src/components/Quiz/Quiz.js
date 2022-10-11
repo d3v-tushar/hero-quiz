@@ -10,9 +10,9 @@ const Quiz = () => {
         <div>
             <h1 className='text-3xl my-5'>Quiz On {name}</h1>
             <h4 className='text-xl'>Number Of Questions: {questions.length}</h4>
-            <div className='grid grid-cols-1 gap-11 my-5 mx-11'>
+            <div className='grid grid-cols-1 gap-11 my-5 md:mx-12'>
             {
-                questions.map(question => <Question key={question.id} question={question}></Question>)
+                questions.map((question, indx) => <Question key={question.id} question={question} indx={indx}></Question>)
             }
             </div>
         </div>
