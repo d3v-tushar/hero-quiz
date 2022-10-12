@@ -8,8 +8,6 @@ const Hero = () => {
         <div className="hero-content text-center text-neutral-content">
             <div className="max-w-md">
             <h1 className="mb-5 text-5xl font-bold">Take A QUIZ <br /> & <br /> BE A HERO</h1>
-            <legend>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem qs</legend>
-            <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
             <label htmlFor="my-modal-6" className="btn modal-button">Take A Quiz</label>
             <Modal></Modal>
             </div>

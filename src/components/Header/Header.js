@@ -20,13 +20,13 @@ const Header = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <div className="menu menu-horizontal p-0">
-            <div className='mx-3'><NavLink className={({isActive}) => isActive ? 'active' : undefined} to='/home'>TOPICS</NavLink></div>
-            <div className='mx-3'><NavLink to='/statistics'>STATISTICS</NavLink></div>
-            <div className='mx-3'><NavLink to='/blog'>BLOG</NavLink></div>
+            <div className='mx-4 text-xl'><NavLink className={({isActive}) => isActive ? 'active' : undefined} to='/home'>TOPICS</NavLink></div>
+            <div className='mx-4 text-xl'><NavLink to='/statistics'>STATISTICS</NavLink></div>
+            <div className='mx-4 text-xl'><NavLink to='/blog'>BLOG</NavLink></div>
           </div>
         </div>
         <div className="navbar-end">
-          <a href='/' className="btn glass">NewsLeter</a>
+          <a href='/' className="btn glass">Donate</a>
         </div>
       </div>
     );
