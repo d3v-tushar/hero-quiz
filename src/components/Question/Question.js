@@ -50,7 +50,7 @@ const Question = ({question, indx}) => {
     const {options} = question;
     return (
         <div className="card bg-gray-800 shadow-xl">
-            <button onClick={lookCorrectAnswer} className='flex justify-end mr-5 my-3'>EYE</button>
+            <button onClick={lookCorrectAnswer} className='flex justify-end mr-5 my-3'>SHOW</button>
             <div className="card-body items-center text-center sm:py-2">
                 <p>Question No: {indx + 1}</p>
                 <h2 className="card-title mb-3">{uiQuestion}</h2>

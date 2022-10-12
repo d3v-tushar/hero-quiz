@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => {
     return (
@@ -18,20 +19,14 @@ const Header = () => {
           <a href='/' className="btn btn-ghost normal-case text-xl">Hero-Quiz</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal p-0">
-            <li className='mx-2'>
-              <NavLink className={({isActive}) => isActive ? 'active' : undefined} to='/'>TOPICS</NavLink>
-            </li>
-            <li className='mx-2'>
-              <NavLink to='/statistics'>STATISTICS</NavLink>
-            </li>
-            <li className='mx-2'>
-              <NavLink to='/blog'>BLOG</NavLink>
-            </li>
-          </ul>
+          <div className="menu menu-horizontal p-0">
+            <div className='mx-3'><NavLink className={({isActive}) => isActive ? 'active' : undefined} to='/home'>TOPICS</NavLink></div>
+            <div className='mx-3'><NavLink to='/statistics'>STATISTICS</NavLink></div>
+            <div className='mx-3'><NavLink to='/blog'>BLOG</NavLink></div>
+          </div>
         </div>
         <div className="navbar-end">
-          <a href='/' className="btn glass">Get started</a>
+          <a href='/' className="btn glass">NewsLeter</a>
         </div>
       </div>
     );
