@@ -6,8 +6,7 @@ const Statistics = () => {
     const data = useLoaderData().data;
     return (
         <div>
-            <h1 className='text-4xl my-8'>This is Statistics</h1>
-            <p className='text-xl'>Under Development</p>
+            <h1 className='text-4xl my-8'>S T A T I S T I C S</h1>
             <div className='flex justify-center my-5'>
             <BarChart width={800} height={400} data={data}>
                 <XAxis dataKey="name" stroke="#8884d8" />
